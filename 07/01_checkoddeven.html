@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = prompt("enter your number");
+        //a = Number(a);
+        console.log(a);
+        if(isNaN(a)){
+            document.write("you enter the non-numeric value")
+            a = prompt("please enter numeric value")
+        }else if(Number(a) % 2 === 0){
+            document.write("This is even number");
+        }else if(Number(a) % 2 !== 0){
+            document.write("This is odd number");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

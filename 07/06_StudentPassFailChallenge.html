@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let totalMarks = 0;
+        let passInSubject = 0;
+
+        let sub1 = prompt("enter marks in subject first");
+        sub1 = Number(sub1);
+        if(sub1 >= 60)passInSubject += 1;
+        totalMarks += sub1;
+
+        let sub2 = prompt("enter marks in subject second");
+        sub2 = Number(sub2);
+        if(sub2 >= 60)passInSubject += 1;
+        totalMarks += sub2;
+
+        let sub3 = prompt("enter marks in subject third");
+        sub3 = Number(sub3);
+        if(sub3 >= 60)passInSubject += 1;
+        totalMarks += sub3;
+
+        let sub4 = prompt("enter marks in subject fourth");
+        sub4 = Number(sub4);
+        if(sub4 >= 60)passInSubject += 1;
+        totalMarks += sub4;
+
+        let sub5 = prompt("enter marks in subject fifth");
+        sub5 = Number(sub5);
+        if(sub5 >= 60)passInSubject += 1;
+        totalMarks += sub5;
+
+        document.write("Your marks subjectwise <br>");
+        document.write(`first subject marks ${sub1} <br>`);
+        document.write(`second subject marks ${sub2} <br>`);
+        document.write(`third subject marks ${sub3} <br>`);
+        document.write(`fourth subject marks ${sub4} <br>`);
+        document.write(`fifth subject marks ${sub5} <br>`);
+
+        (totalMarks / 5 >= 60 && passInSubject >= 4)? {
+            document.write("you are promoted to next standard <br>")
+            document.write(`your average marks is ${totalMarks / 5} <br>`);
+            document.write(`your are passed in ${passInSubject} subjects <br>`);
+        }
+        :{
+            document.write("you are not promoted to next standard");
+            document.write(`your are passed in ${passInSubject} subjects <br>`);
+            document.write(`your average marks is ${totalMarks / 5} <br>`);
+        }
+    </script> 
+</head>
+<body>
+    
+</body>
+</html>
