@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = [10, 20, 30, 40];
+        for(let i of a){
+            document.write(`${i} <br>`);
+        }
+        //do not skip undefine value like for in
+        let b = [10, , 20, , 30, 40];
+        for(let i of b){
+            document.write(`${i} <br>`);
+        }
+        //working with string 
+        let c = "Navneet";
+        for(let i of c){
+            document.write(`${i} <br>`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

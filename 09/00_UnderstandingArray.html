@@ -1,0 +1,28 @@
+<!-- In other language array contains similar type of data but in js array may contain different data types of element.
+     In js we create array by two type 1.Using array literal(recommended) 2. Using constructor 
+     1. let arr = [1, 2, "hi", true];
+     
+     We can also leave the place blank or hole in the hole place undefine is automatically by js-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Example</title>
+  <script>
+    let a = [1, , , , 2, 3, 4, 5];
+    document.write(a); 
+    document.write('<br>');
+    document.write(a.length);
+    delete a[0];
+    document.write(`Length of array after deleting zeroth index element ${a}`);
+    for(let i = 0; i <= a.length; i++){
+      document.write(`printing the index ${i}, and the element is ${a[i]}<br>`);
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
