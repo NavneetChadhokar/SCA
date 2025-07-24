@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //delete the element of a second argument 
+        let a = [10, 20, 30, 40, 50];
+        //document.write(`${a}<br>`);
+        a.splice(1, 2);
+        //document.write(`${a} <br>`);
+
+        //third argument can replace the element of 2 argument or index
+        let b = [10, 20, 30, 40, 50];
+        document.write(`${b} <br>`);
+        //b.splice(2, 2, "test"); // 30 and 40 will delete and test is replaced by it. 
+        //b.splice(2, 0, "test");// it does not delete any element it just add test at the 2th position
+        //b.splice(2, 1, "test1", "test2");// go to the 2nd index and delete 30 and update test1 and then add test2 and then the array continue by 40 50
+        //b.splice(2, -1, "test");// this will do add test at the 2th postion and remaning array continue 30 40 50 
+        //b.splice(2, 2, "test");//it start deleting element from 2 and 2 element are deleted and update test at 2th index
+        //b.splice(1);//it go to the 1st index and delete all the element
+        b.splice(-1);// it delete only last element 
+        document.write(`${b} <br>`);
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
