@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function greeting(Name){
+            document.write(`Good Evening ${Name}  <br>`);
+            document.write(`${arguments.length}`);
+            document.write(`${arguments[0]}, ${arguments[1]}`);
+        }
+    </script>
+</head>
+<body>
+    <script>
+        //greeting("Navneet");
+        //greeting();// it take name as undefine
+        greeting("Navneet","Raa");//js handle this think smartly they do it take Navneet and drop the Raa 
+        
+
+
+    </script>
+    
+</body>
+</html>
