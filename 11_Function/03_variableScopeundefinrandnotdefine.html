@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //let a = 10;
+        function f1(){
+            alert(`value of a : ${a}`);
+        }
+
+        function f2(){
+            let a = 20;
+            alert(`value of a : ${a}`);
+        }
+
+        function f3(){
+            // if we comment the a of f1 then this fuction will give undefine 
+            alert(`value of a : ${a}`);
+        }
+
+        function f4(){
+            alert(`value of a: ${window.a}`);
+        }
+    </script>
+</head>
+<body>
+    <a href="javascript: f1()" >call f1</a>
+    <br>
+    <a href="javascript: f2()" >call f2</a>
+    <br>
+    <a href="javascript: f3()" >call f3</a>
+    <br>
+    <a href="javascript: f4()" >call f4</a>
+    <br>
+</body>
+</html>
