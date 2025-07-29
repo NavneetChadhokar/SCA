@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = 10;//global
+        let b = 11;//global but not include in the window object so we don't call inside locally as same.
+        function f1(){
+            var a = 20;//local
+            let b = 11;
+            document.write(`Print the value of local A : ${a}`);
+            document.write(`<br>`);   
+            document.write(`Print the value of global A : ${window.a}`);
+            document.write(`Print the value of local B : ${b}`);
+            document.write(`Print the value of local B : ${window.b}`);
+        }
+
+    </script>
+</head>
+<body>
+    <a href="javascript:f1()">click here to call f1</a>
+    
+</body>
+</html>

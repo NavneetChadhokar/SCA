@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = 10;
+        function f1(){
+            alert(`value of a : ${a}`);
+        }
+        function f2(){//this function will access local a which is 20 but what if we want to access the global a
+            let a = 20;
+            alert(`value of a : ${a}`);
+            a++;
+            alert(`value of a incremented : ${a}`);
+        }
+    </script>
+</head>
+<body>
+    <a href="javascript: f1()">call f1</a>
+    <br>
+    <a href="javascript: f2()">call f1</a>
+</body>
+</html>

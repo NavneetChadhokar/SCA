@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(a, b){
+            return a + b, a - b;//if we try to return multiple values than js only return first value from right because of flow goes from left to right.
+        }
+    </script>
+</head>
+<body>
+    <a href = "javascript:alert(`sum of this ${f1(10, 20)}`)">click this place to call function</a>
+</body>
+</html>

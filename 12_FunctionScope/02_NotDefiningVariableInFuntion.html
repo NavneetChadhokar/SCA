@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //if inside the function we declear a variable without and decleration then that variable is a part of window object as property eg.a
+        // so this is bad practice of programming that we use the varible without decleration(let, var, const) , so to prevent we use "use strict" before the function call like this 
+        "use strict"
+        function f1(){
+            a = 10;
+            alert(`calling f1 function ${a}`);
+        }
+        function f2(){
+            alert(`calling f2 function ${a}`);
+        }
+    </script>
+</head>
+<body>
+    <a href="javascript: f1()">click here to call f1</a>
+    <br>
+    <a href="javascript: f2()">click here to call f2</a>
+</body>
+</html>
